@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="register" method="post">
+        {% csrf_token %}
+        Name:<input type="text" name="Name" placeholder="Name"><br>
+        Email:<input type="email" name="email" placeholder="email"><br>
+        Date:<input type="datetime-local" name="date" placeholder="date"><br>
+        Investigation:<input type="text" name="investigation" placeholder="investigation"><br>
+        History:<input type="text" name="History" placeholder="History"><br>
+        password:<input type="password" name="password" placeholder="password"><br>
+        confirm password:<input type="password" name="confirm password" placeholder="confirm password"><br>
+        <input type="submit">
+    
+    
+    
+    
+    
+    
+    
+    </form>    
+</body>
+</html>
